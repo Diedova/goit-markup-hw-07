@@ -1,6 +1,12 @@
-body {
-  background-color: tomato;
-}
-a {
-  text-decoration: none;
-}
+@import "./utils/variables";
+@import "./base/common";
+@import "./base/container";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/team";
+@import "./layout/portfolio";
+@import "./layout/footer";
+@import "./component/backdrop";
+@import "./component/modal";
+@import "./component/modal-form";
