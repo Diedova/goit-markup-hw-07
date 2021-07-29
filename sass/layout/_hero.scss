@@ -37,8 +37,9 @@
   font-family: inherit;
   border: none;
   transition: background-color 250ms var(--cubic);
-}
-.button:hover,
-.button:focus {
-  background-color: var(--button-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-color);
+  }
 }

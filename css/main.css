@@ -62,8 +62,7 @@ a {
   transition: color 500ms var(--cubic);
 }
 
-.nav-list a:hover,
-.nav-list a:focus,
+.nav-list a:hover, .nav-list a:focus,
 .media-list a:hover,
 .media-list a:focus {
   color: var(--pretty-color);
@@ -175,8 +174,7 @@ a {
   transition: background-color 250ms var(--cubic);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: var(--button-color);
 }
 
@@ -315,14 +313,13 @@ a {
   transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 
-.icons-link li:not(:last-child) {
-  margin-right: 10px;
-}
-
-.icon-item:hover,
-.icon-item:focus {
+.icon-item:hover, .icon-item:focus {
   fill: var(--white-color);
   background-color: var(--pretty-color);
+}
+
+.icons-link li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .client {
@@ -342,8 +339,7 @@ a {
   transition: fill 250ms var(--cubic), border 250ms var(--cubic);
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.client-icon:hover, .client-icon:focus {
   fill: var(--pretty-color);
   border: 1px solid var(--pretty-color);
 }
@@ -378,8 +374,7 @@ a {
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
-.portfolio-but:hover,
-.portfolio-but:focus {
+.portfolio-but:hover, .portfolio-but:focus {
   background-color: var(--pretty-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -418,8 +413,7 @@ a {
   transition: box-shadow 250ms var(--cubic);
 }
 
-.cards-item a:hover,
-.cards-item a:focus {
+.cards-item a:hover, .cards-item a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -515,6 +509,11 @@ a {
   background-color: var(--footer-icon);
 }
 
+.footer .icon-item:hover, .footer .icon-item:focus {
+  fill: var(--white-color);
+  background-color: var(--pretty-color);
+}
+
 .footer-email {
   margin-left: auto;
 }
@@ -545,12 +544,6 @@ a {
   margin-left: 10px;
   display: flex;
   align-items: center;
-}
-
-.footer .icon-item:hover,
-.footer .icon-item:focus {
-  fill: var(--white-color);
-  background-color: var(--pretty-color);
 }
 
 .backdrop.is-hidden {
@@ -599,6 +592,10 @@ a {
   transition: fill 250ms var(--cubic);
 }
 
+.close:focus, .close:hover {
+  fill: var(--pretty-color);
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -615,8 +612,6 @@ a {
   cursor: pointer;
 }
 
-.close:focus,
-.close.button:hover,
 .form-icon:focus,
 .form-icon:hover {
   fill: var(--pretty-color);

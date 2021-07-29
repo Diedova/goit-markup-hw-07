@@ -13,10 +13,10 @@
   justify-content: center;
   fill: var(--icon-color);
   transition: fill 250ms var(--cubic), border 250ms var(--cubic);
-}
 
-.client-icon:hover,
-.client-icon:focus {
-  fill: var(--pretty-color);
-  border: 1px solid var(--pretty-color);
+  &:hover,
+  &:focus {
+    fill: var(--pretty-color);
+    border: 1px solid var(--pretty-color);
+  }
 }

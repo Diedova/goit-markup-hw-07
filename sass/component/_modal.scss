@@ -22,4 +22,9 @@
   align-items: center;
   justify-content: center;
   transition: fill 250ms var(--cubic);
+
+  &:focus,
+  &:hover {
+    fill: var(--pretty-color);
+  }
 }
