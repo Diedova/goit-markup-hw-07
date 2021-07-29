@@ -128,6 +128,15 @@ a {
   padding-bottom: 25px;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
 .hero {
   background: var(--hero-color);
   color: var(--white-color);
@@ -314,6 +323,29 @@ a {
 .icon-item:focus {
   fill: var(--white-color);
   background-color: var(--pretty-color);
+}
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--pretty-color);
+  border: 1px solid var(--pretty-color);
 }
 
 .portfolio-section {
