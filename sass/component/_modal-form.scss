@@ -12,25 +12,13 @@
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+  &:focus,
+  &:hover {
+    border-color: var(--button-color);
+    outline: none;
+  }
 }
 
-.form-icon:focus,
-.form-icon:hover {
-  fill: var(--pretty-color);
-}
-.form-text:focus,
-.form-text:hover,
-.form-field:focus,
-.form-field:hover,
-.form-input:focus,
-.form-input:hover {
-  border-color: var(--button-color);
-  outline: none;
-}
-.form-input:hover + .form-icon,
-.form-input:focus + .form-icon {
-  fill: var(--pretty-color);
-}
 .form-input + .form-icon,
 .form-input + .form-icon {
   transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
@@ -43,6 +31,11 @@
   color: var(--text-color);
   display: inline-block;
   margin-bottom: 10px;
+  &:focus,
+  &:hover {
+    border-color: var(--button-color);
+    outline: none;
+  }
 }
 
 .modal-title {
@@ -63,6 +56,14 @@
   transform: translateY(-50%);
   top: 50%;
   left: 12px;
+  &:focus,
+  &:hover {
+    fill: var(--pretty-color);
+  }
+  .form-input:hover + &,
+  .form-input:focus + & {
+    fill: var(--pretty-color);
+  }
 }
 .field-wrap {
   position: relative;
@@ -78,6 +79,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  &:focus,
+  &:hover {
+    border-color: var(--button-color);
+    outline: none;
+  }
 }
 .test {
   display: inline-block;
@@ -89,17 +95,6 @@
     background-color 250ms var(--cubic);
 }
 
-.modal-form-check:focus + .test {
-  border-color: var(--pretty-color);
-}
-.modal-form-check:checked + .test {
-  border-color: var(--pretty-color);
-  background-color: var(--pretty-color);
-  background-image: url("../images/icons/check.svg");
-  background-size: contain;
-  border-radius: 2px;
-  background-origin: content-box;
-}
 .contact-form .button {
   margin: 0 auto;
 }
@@ -118,6 +113,18 @@
   border-radius: 2px;
   transition-property: border-color 250ms var(--cubic),
     background-color 250ms var(--cubic);
+
+  .modal-form-check:checked + & {
+    border-color: var(--pretty-color);
+    background-color: var(--pretty-color);
+    background-image: url("../images/icons/check.svg");
+    background-size: contain;
+    border-radius: 2px;
+    background-origin: content-box;
+  }
+  .modal-form-check:focus + & {
+    border-color: var(--pretty-color);
+  }
 }
 
 .modal-form {
