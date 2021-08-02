@@ -1,0 +1,25 @@
+.work {
+  padding-bottom: 82px;
+}
+.box {
+  display: flex;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+  & img {
+    display: block;
+  }
+  & .pre-title {
+    position: absolute;
+    width: 100%;
+    color: var(--white-color);
+    text-align: center;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0px;
+    padding: 27px 0px;
+    margin-bottom: 0px;
+  }
+}
+.label {
+  position: relative;
+}

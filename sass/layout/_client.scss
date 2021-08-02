@@ -20,3 +20,9 @@
     border: 1px solid var(--pretty-color);
   }
 }
+.client-list {
+  display: flex;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+}

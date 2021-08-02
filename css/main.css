@@ -217,22 +217,15 @@ a {
   padding-bottom: 94px;
 }
 
+.features-item {
+  display: flex;
+}
+
 .features-item li {
   width: 270px;
 }
 
-.features-item,
-.box,
-.our-team,
-.icons-link,
-.client-list {
-  display: flex;
-}
-
-.features-item li:not(:last-child),
-.box li:not(:last-child),
-.our-team li:not(:last-child),
-.client-list li:not(:last-child) {
+.features-item li:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -240,12 +233,16 @@ a {
   padding-bottom: 82px;
 }
 
-.box img {
-  display: block;
+.box {
+  display: flex;
 }
 
-.label {
-  position: relative;
+.box li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.box img {
+  display: block;
 }
 
 .box .pre-title {
@@ -259,10 +256,22 @@ a {
   margin-bottom: 0px;
 }
 
+.label {
+  position: relative;
+}
+
 .team {
   background: var(--team-color);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.our-team {
+  display: flex;
+}
+
+.our-team li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .surname {
@@ -298,7 +307,12 @@ a {
 }
 
 .icons-link {
+  display: flex;
   fill: var(--icon-color);
+}
+
+.icons-link li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .icon-item {
@@ -316,10 +330,6 @@ a {
 .icon-item:hover, .icon-item:focus {
   fill: var(--white-color);
   background-color: var(--pretty-color);
-}
-
-.icons-link li:not(:last-child) {
-  margin-right: 10px;
 }
 
 .client {
@@ -342,6 +352,14 @@ a {
 .client-icon:hover, .client-icon:focus {
   fill: var(--pretty-color);
   border: 1px solid var(--pretty-color);
+}
+
+.client-list {
+  display: flex;
+}
+
+.client-list li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .portfolio-section {

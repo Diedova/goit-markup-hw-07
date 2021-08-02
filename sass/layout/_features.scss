@@ -32,39 +32,12 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features-item li {
-  width: 270px;
-}
-.features-item,
-.box,
-.our-team,
-.icons-link,
-.client-list {
+.features-item {
   display: flex;
 }
-
-.features-item li:not(:last-child),
-.box li:not(:last-child),
-.our-team li:not(:last-child),
-.client-list li:not(:last-child) {
-  margin-right: 30px;
-}
-.work {
-  padding-bottom: 82px;
-}
-.box img {
-  display: block;
-}
-.label {
-  position: relative;
-}
-.box .pre-title {
-  position: absolute;
-  width: 100%;
-  color: var(--white-color);
-  text-align: center;
-  background: rgba(47, 48, 58, 0.8);
-  bottom: 0px;
-  padding: 27px 0px;
-  margin-bottom: 0px;
+.features-item li {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
