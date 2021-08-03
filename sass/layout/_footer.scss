@@ -4,7 +4,7 @@
   padding-bottom: 60px;
 }
 
-.footer .logo__accent {
+.logo__accent--dark {
   color: var(--white-color);
 }
 
@@ -39,7 +39,7 @@
   display: flex;
   align-items: baseline;
 }
-.footer .icon-item {
+.socail__link--dark {
   background-color: var(--footer-icon);
   &:hover,
   &:focus {
@@ -47,6 +47,7 @@
     background-color: var(--pretty-color);
   }
 }
+
 .footer-email {
   margin-left: auto;
 }

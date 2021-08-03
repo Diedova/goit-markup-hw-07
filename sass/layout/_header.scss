@@ -1,4 +1,4 @@
-.header .logo {
+.header__logo {
   margin-right: 93px;
 }
 
@@ -13,8 +13,8 @@
 .logo__accent {
   color: var(--black-color);
 }
-.nav-list a,
-.media-list a {
+.nav-list__link,
+.media-list__link {
   transition: color 500ms var(--cubic);
   &:hover,
   &:focus {
@@ -25,7 +25,7 @@
 .nav-list {
   position: relative;
 }
-.current-link {
+.nav-list__link--current {
   color: var(--pretty-color);
   position: relative;
   padding-bottom: 33px;
@@ -51,8 +51,8 @@
   display: flex;
   align-items: center;
 }
-.nav-list li:not(:last-child),
-.media-list li:not(:last-child) {
+.nav-list__item:not(:last-child),
+.media-list__item:not(:last-child) {
   margin-right: 50px;
 }
 .media-list {
@@ -60,7 +60,7 @@
   color: var(--text-color);
   margin-left: auto;
 }
-.nav-icons {
+.media-list__icon {
   fill: currentColor;
   margin-right: 10px;
 }
